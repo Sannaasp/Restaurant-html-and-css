@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="En restaurang i Göteborg för matälskare"
+    />
+    <title>Restaurang Mango</title>
+    <link rel="stylesheet" href="../css/table-booking.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html#menuContainer">Meny</a></li>
+        <li><a href="table-booking.html">Boka bord</a></li>
+        <li><a href="../index.html#openingContainer">Öppetider</a></li>
+        <li><a href="../index.html#contactContainer">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div id="flexContainer">
+      <section id="bookingbox">
+        <div id="bookinginformation">
+          <h1>Boka bord</h1>
+          <h2>Välkommen till Mangos</h2>
+          <p>
+            Här kan du boka bord för kväll. Ange hur många ni är i sällskapet
+            och vilken tid ni önskar komma. Det går också bra att ringa att boka
+            på telefonnummer 0500-41 11 01
+          </p>
+
+          <p id="number">Antal personer:</p>
+        </div>
+        <!--
+          https://markheath.net/post/customize-radio-button-css
+        -->
+
+        <form id="container" method="POST" action="table-booking.html">
+          <div class="grid-container">
+            <input
+              id="bookingOption1"
+              class="bookingOption"
+              type="radio"
+              value="1"
+              name="nrPeople"
+            />
+            <label for="bookingOption1">1</label>
+
+            <input
+              id="bookingOption2"
+              class="bookingOption"
+              type="radio"
+              value="2"
+              name="nrPeople"
+            />
+            <label for="bookingOption2">2</label>
+
+            <input
+              id="bookingOption3"
+              class="bookingOption"
+              type="radio"
+              value="3"
+              name="nrPeople"
+            />
+            <label for="bookingOption3">3</label>
+
+            <input
+              id="bookingOption4"
+              class="bookingOption"
+              type="radio"
+              value="4"
+              name="nrPeople"
+            />
+            <label for="bookingOption4">4</label>
+
+            <input
+              id="bookingOption5"
+              class="bookingOption"
+              type="radio"
+              value="5"
+              name="nrPeople"
+            />
+            <label for="bookingOption5">5</label>
+
+            <input
+              id="bookingOption6"
+              class="bookingOption"
+              type="radio"
+              value="6"
+              name="nrPeople"
+            />
+            <label for="bookingOption6">6</label>
+
+            <input
+              id="bookingOption7"
+              class="bookingOption"
+              type="radio"
+              value="7"
+              name="nrPeople"
+            />
+            <label for="bookingOption7">7</label>
+
+            <input
+              id="bookingOption8"
+              class="bookingOption"
+              type="radio"
+              value="8"
+              name="nrPeople"
+            />
+            <label for="bookingOption8">8</label>
+
+            <input
+              id="bookingOption9"
+              class="bookingOption"
+              type="radio"
+              value="9"
+              name="nrPeople"
+            />
+            <label for="bookingOption9">9</label>
+          </div>
+          <div id="dateContainer">
+            <div id="date">
+              <p>Datum</p>
+              <select name="date">
+                <option selected value="oktober">oktober</option>
+                <option value="november">november</option>
+                <option value="december">december</option>
+              </select>
+            </div>
+            <div id="time">
+              <p>Klockslag</p>
+              <select name="Klockslag">
+                <option value="18">Kl 18</option>
+                <option value="19">Kl 19</option>
+                <option selected value="20">Kl 20</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="nameContainer">
+            <p>Förnamn</p>
+            <input name="first-name" placeholder="Förnamn" type="text" />
+            <p>Efternamn</p>
+            <input name="last-name" placeholder="Efternamn" type="text" />
+            <p>Telefonnummer</p>
+            <input name="phonenumber" placeholder="Telefonnummer" type="text" />
+            <p>Mailadress</p>
+            <input name="mail" placeholder="Mailadress" type="text" />
+          </div>
+          <div id="sendButton">
+            <input type="submit" value="Boka" />
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
